@@ -1,2 +1,2 @@
 # homework
-data :science: fundamentals homework
+data science fundamentals homework
