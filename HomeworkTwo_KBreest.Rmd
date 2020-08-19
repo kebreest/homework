@@ -1,0 +1,23 @@
+---
+title: "HomeworkTwo"
+author: "Kazmiera Breest"
+date: "8/10/2020"
+output: word_document
+---
+#  COVID DATA
+## Describing the Data 
+This dataset contains survey responses from a questionaire aimed at gathering insight on how folks in the UK experience the crisis caused by COVID-19. More specifically, Italian citizens took this optional survey which explores their self reported behaviors during the pandemic. The survey collected responses to 62 different questions, which resulted in a data set that has 80 variables, or columns, and 3,460 individual observations, or rows, with each row indicating a unique survey response. Outside of the 62 questions, the remaining 18 rows are made up of identifying information such as the start and end date of the survey response, contacts information, language, and names. 
+
+```{r}
+setwd("C:/Users/Kassie/Documents/DACSS 601/R")
+library(tidyverse)
+covidData <- read_tsv("CovidResponses.tsv")
+```
+
+```{r}
+head(covidData)
+colnames(covidData)
+```
+```{r}
+dim(covidData)
+```
